@@ -1,12 +1,8 @@
 #root {
-  padding-top: 2rem;
   text-align: center;
+  padding-top: 3em;
+  width: 100%;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
+
 

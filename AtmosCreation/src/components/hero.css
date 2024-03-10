@@ -1,55 +1,175 @@
-.title{
-    font-size: 48px;
+.title {
+    font-size: 36px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
     margin: auto;
-    margin-top: -30px;
-    max-width: 1000px;
+    margin-top: -15px;
+    max-width: 800px;
 }
 
-.span{
-    color: #00FF0A;
-}
-
-.logo{
+.logo {
     margin-top: 5px;
-    width: 70px;
+    width: 50px;
     height: auto;
+    padding: 1em;
 }
 
-.description
-{
-    font-size: 18px;
+.description {
+    font-size: 16px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 200;
     margin: auto;
+    max-width: 800px;
+    margin-top: 10px;
 }
 
-.video{
-    width: 650px;
+.span{
+    color: #00FF0A
+}
+
+.video {
+    width: 100%;
+    max-width: 800px;
     height: 300px;
     background-color: gray;
     margin-left: auto;
     margin-right: auto;
     border-radius: 20px;
-    margin-top: 30px;
+    margin-top: 20px;
 }
 
-.button{
-    width: 300px;
+.button {
+    width: 250px;
     background-color: #ffffff;
-    height: 60px;
-    margin-top: 40px;
+    height: 50px;
+    margin-top: 20px;
     border-radius: 20px;
-    box-shadow: 0 0 40px 0px white;
     margin-left: auto;
     margin-right: auto;
 }
 
-.btnText{
-    font-size: 24px;
+.button:hover {
+    box-shadow: 0 0 20px 0px white;
+    cursor: pointer;
+}
+
+.btnText {
+    font-size: 18px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     color: black;
-    padding: 12px;
+    padding: 10px;
 }
+
+/* Additional styles for mobile devices */
+@media (max-width: 767px) {
+    .title {
+        font-size: 24px;
+        margin-top: -10px;
+    }
+
+    .logo {
+        width: 40px;
+        padding: 0.5em;
+    }
+
+    .description {
+        font-size: 14px;
+        margin-top: 5px;
+    }
+
+    .video {
+        height: 200px;
+        margin-top: 10px;
+    }
+
+    .button {
+        width: 200px;
+        height: 40px;
+        margin-top: 10px;
+    }
+
+    .btnText {
+        font-size: 16px;
+        padding: 8px;
+    }
+}
+
+.animated-logo {
+    animation: bounceInUp 1s ease-in-out;
+}
+
+.animated-title {
+    animation: slideInLeft 1s ease-in-out;
+}
+
+.animated-description {
+    animation: slideInRight 1s ease-in-out;
+}
+
+.animated-video{
+    animation: bounceInDown 1s ease-in-out;
+}
+
+.animated-button{
+    animation: bounceInDown 3s ease-in-out;
+}
+
+/* Dodajte sledeće ključne okvire za animacije u CSS */
+
+@keyframes bounceInUp {
+    0% {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes bounceInDown {
+    0% {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInLeft {
+    0% {
+        transform: translateX(-150px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInRight {
+    0% {
+        transform: translateX(150px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-20px);
+    }
+    60% {
+        transform: translateY(-10px);
+    }
+}
+

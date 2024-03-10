@@ -1,42 +1,45 @@
-.back{
+.back {
     display: flex;
     flex-direction: row;
-    margin-top: 100px;
+    margin-top: 80px;
     align-items: center;
     justify-content: center;
 }
 
-.text{
+.text {
     font-family: "Montserrat", sans-serif;
     font-weight: 600;
-    font-size: 35px;
-    margin-left: 10px;
+    font-size: 36px; /* Adjusted font size */
+    line-height: 1.2; /* Added line-height for better spacing */
     display: flex;
     white-space: nowrap;
     text-align: left;
+    margin-left: 10px;
+    color: #ECEAD4;
 }
 
-.pic{
+.pic {
     width: 100%;
     height: auto;
-    margin-top: -100px;
+    margin-top: -50px;
 }
 
-.desc{
+.desc {
     font-family: "Montserrat", sans-serif;
     font-weight: 400;
-    font-size: 25px;
-    margin-top: 30px;
+    font-size: 20px; /* Adjusted font size */
+    line-height: 1.6; /* Added line-height for better spacing */
+    margin-top: 30px; /* Adjusted margin */
     max-width: 800px;
     margin-right: auto;
     margin-left: auto;
 }
 
-.boxter{
-    margin-top: -100px;
+.boxter {
+    margin-top: -80px;
 }
 
-.lastDiv{
+.lastDiv {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -44,18 +47,131 @@
     max-width: 800px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 30px;
+    margin-top: 30px; /* Adjusted margin */
 }
 
-.lastText{
+.lastText {
     font-family: "Montserrat", sans-serif;
     font-weight: 400;
-    font-size: 25px;
+    font-size: 20px; /* Adjusted font size */
+    line-height: 1.6; /* Added line-height for better spacing */
     max-width: 800px;
 }
 
-.icon{
-    width: auto;
+.icon {
+    width: 20px;
     height: auto;
     margin-left: 10px;
 }
+
+@media (min-width: 2559px) {
+
+.pic {
+    width: 70%;
+    height: auto;
+    margin-top: -50px;
+}
+}
+
+/* Additional styles for mobile devices */
+@media (max-width: 767px) {
+    .text {
+        font-size: 24px;
+        margin-left: 5px;
+    }
+
+    .desc {
+        font-size: 14px;
+        margin-top: 15px;
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+
+    .boxter {
+        margin-top: -60px;
+    }
+
+    .lastText {
+        font-size: 14px;
+    }
+
+    .icon {
+        width: 15px;
+    }
+}
+
+
+.animated-title2 {
+    animation: slideInLeft 1s ease-in-out;
+}
+
+.animated-pic {
+    animation: slideInRight 1s ease-in-out;
+}
+
+.animated-textL{
+    animation: slideInLeft 1s ease-in-out;
+}
+
+.animated-textR{
+    animation: slideInRight 1.5s ease-in-out;
+}
+
+
+@keyframes bounceInUp {
+    0% {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes bounceInDown {
+    0% {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInLeft {
+    0% {
+        transform: translateX(-150px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInRight {
+    0% {
+        transform: translateX(150px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-20px);
+    }
+    60% {
+        transform: translateY(-10px);
+    }
+}
+
+

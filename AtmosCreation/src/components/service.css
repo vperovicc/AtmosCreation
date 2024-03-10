@@ -1,0 +1,79 @@
+.tit{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 120px;
+}
+
+.titText{
+    font-family: "Montserrat",sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    margin-left: 8px;
+    color: #ECEAD4
+}
+
+.contain{
+    display: flex;
+    justify-content: center;
+    margin-top: -50px;
+    margin-left: 140px;
+}
+
+.serviceTitle{
+    font-family: "Anton",sans-serif;
+    font-size: 24px;
+    max-width: 150px;
+    margin-top: 20px;
+}
+
+.serviceTitle p{
+    margin-top:220px;
+}
+
+.separateCreative{
+    max-width: 400px;
+    font-family: "Montserrat",sans-serif;
+    font-size: 12px;
+    margin-top: 130px;
+    margin-left: 70px;
+}
+
+.creatives{
+    margin-top: 80px;
+    margin-left: 20px;
+}
+
+.dots{
+    width: 200px;    
+    height: auto;
+    margin-top: 30px;
+    margin-left: 270px;
+}
+
+.circle{
+    width: 30px;
+    height: 30px;
+    margin-left: 50px;
+    margin-top: 250px;
+    border-radius: 50px;
+    background-color: #ffffff;
+    box-shadow: 0 0 30px 5px white;
+}
+
+.circle::before{
+    content:'';
+    position: absolute;
+    width: 5px;
+    height: 1400px;
+    background-color: #ffffff;
+    top: 2350px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.separateCreative img{
+    width: 100px;
+    height: 50px;
+    margin-bottom: 20px;
+}
