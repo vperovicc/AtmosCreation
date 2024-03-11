@@ -12,11 +12,15 @@ const App = () =>(
     <div className="white-glow1"/>
     <Hero/>
     <About/>
-    {/*<Service/>*/}
+    <div className='white__gradient1'/>
+    <div className='white__gradient2'/>
+    <Service/>
+    <div className='white__gradient3'/>
+    <div className='white__gradient4'/>
     <Faq/>
     <Calendly/>
     <Footer/>
-    <div className="white-glow2"/>
+    <div className='white__gradient5'/>
   </div>
 );
 

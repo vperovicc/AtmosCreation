@@ -6,10 +6,21 @@ const Footer = () => {
     <div className='footer'>
         <div className='infos'>
             <div className='social'>
-                <img src='../src/assets/instagram.svg'/>
-                <img src='../src/assets/facebook.svg'/>
+            <a href='https://www.instagram.com/aurelius.gill/' target='_blank' rel='noopener noreferrer'>
+              <img src='../src/assets/instagram.svg'/>
+            </a>
+
+            <a href='https://www.facebook.com/profile.php?id=100092427669650' target='_blank' rel='noopener noreferrer'>
+              <img src='../src/assets/facebook.svg'/>
+            </a>
+
+            <a href='https://twitter.com/Aureliusgill' target='_blank' rel='noopener noreferrer'>
                 <img src='../src/assets/twitter.svg'/>
+            </a>
+
+            <a href='http://www.youtube.com/@AureliusGill' target='_blank' rel='noopener noreferrer'>
                 <img src='../src/assets/youtube.svg'/>
+            </a>
             </div>
 
             <img className='logo1' src='../src/assets/Logo.png'/>
